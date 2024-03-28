@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input placeholder="Enter your name" id="name" type="text" required /></label>
+        <label id="email-label" for="email">Email <input placeholder="Enter your Email" id="email" type="email" required /></label>
+        <label id="number-label" for="number">Age <input placeholder="Age" id="number" type="number" min="13" max="120" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="deopdwon">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Time Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+        <label><input type="radio" name="radio" class="inline" value="value" checked />Definitely</label>
+        <label><input class="inline" type="radio" name="radio" value="value" />Maybe</label>
+        <label><input class="inline" type="radio" name="radio" value="value" />not sure</label>
+        <label for="2nd-dropdown">What is your favorite feature of freeCodeCamp?</label>
+        <select>
+          <option value="">Select an option</option>
+          <option value="6">Challenges</option>
+          <option value="7">Projects</option>
+          <option value="8">Community</option>
+          <option value="9">Open Source</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? (Check all that apply)</label>
+        <label><input class="inline" value="front-end-projects" type="checkbox" />Front-end Projects</label>
+        <label><input class="inline" value="back-end-projects" type="checkbox" />Back-end Projects</label>
+        <label><input class="inline" value="data-visualization" type="checkbox" />Data Visualization</label>
+        <label><input class="inline" value="challenges" type="checkbox" />Challenges</label>
+        <label><input class="inline" value="open-source-community" type="checkbox" />Open Source Community</label>
+        <label><input class="inline" value="hitter-help-room" type="checkbox" />hitter help rooms</label>
+        <label><input class="inline" value="videos" type="checkbox" />Videos</label>
+        <label><input class="inline" value="city-meetups" type="checkbox" />City Meetups</label>
+        <label><input class="inline" value="wiki" type="checkbox" />Wiki</label>
+        <label><input class="inline" value="forum" type="checkbox" />Forum</label>
+        <label><input class="inline" value="additional-courses" type="checkbox" />Additional Courses</label>
+      </fieldset>
+      <fieldset>
+      <textarea></textarea>
+        <input type="submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
